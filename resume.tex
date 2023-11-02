@@ -16,7 +16,6 @@
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
 
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -41,17 +40,10 @@
   \vspace{-3pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-2pt}}
-  }
-}
-
-\newcommand{\resumeItemWithoutTitle}[1]{
-  \item\small{
-    {\vspace{-2pt}}
   }
 }
 
@@ -63,7 +55,6 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -73,123 +64,112 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+% CV STARTS HERE
 \begin{document}
 
-%----------HEADING-----------------
+% HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   \textbf{{\LARGE Rishav Chatterjee}} & Email : \href{mailto:rc1220@ic.ac.uk}{rc1220@ic.ac.uk}\\
-  \href{https://www.linkedin.com/in/rishav-chatterjee-a58058212/}{Linkedin: https://www.linkedin.com/in/rishav-chatterjee-a58058212/} & Mobile : +44 07902497955 \\
-  \href{https://github.com/rishav-c1}{Github: https://github.com/rishav-c1} \\
+  \href{https://www.linkedin.com/in/rishav-chatterjee-a58058212/}{Linkedin: rishav-chatterjee} & Mobile : +44 07902497955 \\
+  \href{https://github.com/rishav-c1}{Github: rishav-c1} \\
 \end{tabular*}
 
-%-----------EDUCATION-----------------
+% EDUCATION
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Imperial College London}{London, UK}
-      {BEng Computing $\mid$ Grade: 68.52\% [2:1]}{Oct 2021 - May 2024}
+      {BEng Computing}{Oct 2021 - May 2024}
       \resumeItemListStart
-      \resumeItem{DoCSoc}{\textbf{Software Development Coordinator} of Imperial's largest student society: Department of Computing Society.}
-        %{Current \textbf{Software Development Coordinator} of Imperial College's largest student society: Department of Computing Society [DoCSoc].}
-	   %\resumeItem{Relevant Modules}{Computer Practical, Advanced Programming, Reasoning about Programs, Discrete Mathematics, Logic, Linear Algebra, Calculus, Graphs \& Algorithms, Databases, Computer Systems and Computer Architecture.}
-	   \resumeItem{Achievement (ICTF 2022)}{Achieved \textbf{Group Rank \#1} at Imperial Capture The Flag Hackathon '22.}
+	   \resumeItem{BEng Individual Project}{LLMs for Robotic Tutoring\textit{ - Prof. Nicole Salomons}}
+	   \resumeItem{Final Year Modules}{Advanced Computer Architecture, Operations Research, Introduction to Machine Learning, Computer Vision, Robotics, Project Management (BUSI60046), Quantum Mechanics I (MATH60015)}
+	   \resumeItem{Achievement}{ICTF 2022: Achieved Rank \#1 at Imperial Capture The Flag Hackathon '22.}
+       \resumeItem{DoCSoc}{Software Development Coordinator of Imperial's largest student society: Department of Computing Society.}
 	  \resumeItemListEnd
     \resumeSubheading
       {La Martiniere for Boys}{Kolkata, India}
-      {High School Diploma (Distinction) $\mid$ Grade: 95.25\% (ISC 2020)}{Mar 2005 - May 2020}
+      {High School Diploma (Distinction)}{Mar 2005 - May 2020}
   \resumeSubHeadingListEnd
 
-%
-%--------SKILLS------------
-\section{Skills Summary}
+% SKILLS
+\section{Skills}
 	\resumeSubHeadingListStart
-	\resumeSubItem{Languages}{Native in English and Bengali, fluent in Hindi}
-	\resumeSubItem{Programming}{Java, Python, JavaScript, C, Haskell, Kotlin, FORTRAN}
-	\resumeSubItem{Utilities}{Linux, \LaTeX, mySQL, Git, MATLAB, MS Office}
-% 	\resumeSubItem{Libraries}{Python: numpy, matplotlib, pandas, scipy; Javascript: Vue.js}
+	\resumeSubItem{Languages}{English, Bengali, Hindi, Spanish (Working Proficiency)}
+	\resumeSubItem{Programming}{Java, Python, JavaScript, C, C++, Haskell, Kotlin, FORTRAN, Scala}
+	\resumeSubItem{Utilities}{Linux, Docker, \LaTeX, TablePlus (SQL), Git, MATLAB, AWS, Bash, TensorFlow, CFD}
 \resumeSubHeadingListEnd
 
-
-
-%-----------EXPERIENCE-----------------
+% EXPERIENCE
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {TerraAPI (YC W21)}{London, UK}
+    {Software Engineer}{Nov 2022 - Jul 2023}
+    \resumeItemListStart
+\resumeItem{Backend Development}{Contributed to the integration of health data into TerraAPI's backend using modern frameworks and tools. Played a key role in the evolution of v3 Data Models, ensuring scalability, optimized data processing techniques.}
+\resumeItem{Project Management}{Oversaw agile deployment processes, ensured adherence to best coding practices, facilitated cross-functional team synchronization, and championed client-centric approaches to enhance stakeholder relations.}
+\resumeItem{Hackathons}{Mentored students at TerraAPI workshops and hackathons at UK \& US universities (Imperial, MIT, Harvard, Cambridge, Oxford, UCL, LSE, KCL)}
+    \resumeItemListEnd
+
     \resumeSubheading
     {Imperial College London}{London, UK}
-    {Undergraduate Research Assistant - Prof. Ricardo M. Botas \& Dr. Pablo A. Martos}{Jul 2022 - Present}
-    
+    {Undergraduate Research Assistant (UROP) - Prof. Ricardo M. Botas \& Dr. Pablo A. Martos}{Jul 2022 - Sep 2023}
     \resumeItemListStart
-        \vspace{1.5mm} %2mm vertical space
-        \textbf{\small{\textit{Data Analytics and AI development for Turbomachinery applications}}}
-        \resumeItem{Development of high-fidelity turbine meanline model in Python}{}
-        \begin{description}[font=$\bullet$]
-        \item {\textbf{Researched and Developed} the model to run faster simulations than its FORTRAN counterpart model currently in use by the Thermofluids Research Group of Imperial.}
-        \item {\textbf{Calibration: Validation of CFD simulations} of the turbine model through analysis of Volute and Rotor component models of the Turbine against MATLAB plots generated by the FORTRAN model and calibrated to 99.73\% accuracy.}
-        \item {\textbf{Optimization: }Analyzed and selected \textbf{dynamic optimal functional bounds} for a given range for root/solution calculation to significantly reduce net iterative calls and runtime of modular functions.}
-        \end{description}
-      \resumeItemListEnd
-     
-    % \vspace{2mm} %2mm vertical space
-    % \textit{\small{Team Lead (ImpVis) - Under Dr. Caroline Clewley}}
-    % \resumeItemListStart
-    %     \vspace{2mm} %2mm vertical space
-    %     \textbf{\small{Data Analytics and AI development for Turbomachinery applications\linebreak}}
-    %     {\small{Development and Optimization of high-fidelity turbine mastercode}}
-    % \resumeItemListEnd
-      
-    \resumeSubheading
-		{Goldman Sachs}{Remote}
-		{Virtual Software Engineering Experience (Cybersecurity)}{May 2021}
-		\resumeItemListStart
-        \resumeItem{Vulnerability Analysis}{Developed Python script to reverse-engineer MD5 hashes to crack password dump file.}
-        \resumeItem{Hashing Algorithm Testing} {Explored slow-hashing algorithms such as SHA512crypt and PBKDF2 and use of Cryptographic Salt to prevent brute-force/dictionary attacks.}
-		\resumeItemListEnd
+        \resumeItem{Research Focus}{Explored the potential of ML techniques in optimizing and analyzing Turbomachinery systems.}
+        \resumeItem{Model Evolution}{Designed and executed an advanced high-precision turbine meanline model developed in Python, realizing significant computational advantages over traditional FORTRAN models.}
+        \resumeItem{Validation}{Conducted comprehensive Computational Fluid Dynamics (CFD) simulations, ensuring robust programmatic validation against legacy FORTRAN-generated MATLAB plots.}
+        \resumeItem{Collaboration \& Leadership}{Worked cohesively with a multidisciplinary team of engineers and data scientists, leveraging combined expertise to drive project advancements and innovations.}
+    \resumeItemListEnd
+
 
     \resumeSubheading
          {Xcelsius E-sports}{Kolkata, India}
-         {Founder}{Jul 2019 - Present}
+         {Founder}{Jul 2019 - Mar 2021}
          \resumeItemListStart
-            \resumeItem{Founded Xcelsius E-sports}{a company that runs Kolkata’s first large-scale E-sports League.}
-             \resumeItem{Sony Partnernership}{Secured sponsorship deals with 5 companies including a long-term partnership with Sony PlayStation, their first such deal in India by managing to identify and present the value of my audience to brands.}
-             \resumeItem{Scaling and Financially Profitability}{Achieved financial profitability and currently planning scaling by expansion into mobile games and streaming by building a community out of thousands of solitary gaming enthusiasts.}
+            \resumeItem{Initiative}{Founded Xcelsius E-sports, Kolkata’s first large-scale E-sports League.}
+            \resumeItem{Sponsorship}{Secured deals with 5 companies including a partnership with Sony PlayStation.}
+            \resumeItem{Scaling}{Achieved financial profitability and planning expansion into mobile games and streaming.}
 	       \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------------
+% PROJECTS
 \section{Academic Projects}
 \resumeSubHeadingListStart
+
 \resumeSubheading
-{ARM Emulator and Assembler}{Stack: C [Extension - C \& Python]}
-{Year 1 Group project on RISC based computer processors (Subset of ARM ISA)}{Jun 2022}
+{WACC}{Stack: Scala}
+{Year 2 Group Project on Compilers}{Mar 2023}
 \resumeItemListStart
-\resumeItem{Emulator \& Assembler}{Led development of an emulator and an assembler to simulate the execution of an ARM binary file on a Raspberry Pi and to translate ARM assembly source file into a binary file respectively.}
-\resumeItem{Serialisability \& Recoverability Analyser [Extension]}{Developed a transaction analyser to determine and visualise the serialisability \& recoverability of target histories by creating WFGs to show transaction conflicts (Matplotlib, NetworkX).}
-	  \resumeItemListEnd
+\resumeItem{Compiler Construction}{Built a WACC compiler for Armv6/Arm11 and Intel x86-64.}
+\resumeItem{Language Parsing}{Used Parsley for parsing, checked syntax/semantics, and generated error messages.}
+\resumeItemListEnd
+
+\resumeSubheading
+{PintOS}{Stack: C}
+{Year 2 Group Project on OS Development}{Dec 2022}
+\resumeItemListStart
+\resumeItem{OS Development}{Collaborated on an OS with schedulers and synchronization mechanisms.}
+\resumeItem{Memory Management}{Designed memory management techniques and implemented page swapping.}
+\resumeItemListEnd
 
 \resumeSubheading
 {123\&Me}{Stack: JavaScript, Python-Django}
-{\textbf{CNN ML model} to help children achieve proficiency in numeracy and basic arithmetic}{Feb 2022}
+{CNN model to help children achieve proficiency in basic numeracy}{Feb 2022}
 \resumeItemListStart
-\resumeItem{Interactive Web App Interface}{Developed web app to generate arithmetic problems on-screen with an intuitive UI using HTML, CSS and JavaScript to enable accurate interaction with the canvas via touch/cursor.}
-\resumeItem{Image Compression \& MNIST Dataset Training}{Implemented 2-layer compression algorithm to map a 560x560 image from the canvas to a 18x18 with the group to feed the CNN ML model we trained using the MNIST Dataset. This prediction generated by the CNN is checked against the expected answer to the problem posed to the user to provide feedback.}
-	  \resumeItemListEnd
-	  
+\resumeItem{Learning Platform}{Developed a web app generating arithmetic problems for children.}
+\resumeItem{Model Training}{Designed a compression algorithm for a CNN ML model trained on the MNIST Dataset.}
+\resumeItemListEnd
+
 \resumeSubheading
 {Neural Network Height Maps}{Stack: JavaScript}
-{NN Height Maps Visualisation for Imperial College’s Mathematics for ML course on Coursera}{Sep 2021}
+{Visualization Tool for Imperial College’s Maths for ML course on Coursera}{Sep 2021}
 \resumeItemListStart
-\resumeItem{Vanilla JavaScript}{Developed algorithm for plotting a 3D contour map of the activation regions of a neural network using custom functions with no library dependencies. Functional implementation of real-time heightmap plot with parallel projection, lighting and shadows. Native responsive UI in HTML and CSS.}
-	  \resumeItemListEnd
+\resumeItem{Visualization}{Engineered an algorithm rendering a shaded 3D contour map of neural network activation regions.}
+\resumeItemListEnd
+
+
 \resumeSubHeadingListEnd
 
-%-----------Awards-----------------
-% \section{Honors and Awards}
-% \begin{description}[font=$\bullet$]
-% \item \textbf{Imperial CTF 2022: }{Ranked as the Best Group in Imperial Capture The Flag 2022}
-% \end{description}
-%-------------------------------------------
+
 \end{document}
